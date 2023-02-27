@@ -1,0 +1,57 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.moto-widget-menu-toggle-btn {
+    background-color: transparent !important;
+    color: #3cc88f !important;
+}
+
+.mobile-navbar {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 0;
+    z-index: 111;
+}
+
+.mobile-navbar .links a {
+    padding: 10px 0;
+    color: #434f53;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+    transition: all .3s;
+}
+
+.mobile-navbar .links a:hover {
+    background-color: #3cc88f;
+    color: #fff;
+}
+
+.mobile-navbar .links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-wrap: nowrap;
+    }
+
+    .navbar .button-side {
+        align-items: end;
+    }
+
+    .mobile-navbar.show {
+        display: flex;
+    }
+}
