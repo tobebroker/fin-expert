@@ -7,6 +7,10 @@ body {
     color: #3cc88f !important;
 }
 
+.navbar .button-side {
+    flex-direction: unset !important;
+}
+
 .mobile-navbar {
     display: none;
     position: absolute;
@@ -17,6 +21,30 @@ body {
     background-color: #ffffff;
     padding: 10px 0;
     z-index: 111;
+}
+
+.navbar-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    background-color: #3cc88f;
+    border-color: transparent;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: .3s;
+    line-height: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.navbar-btn:hover {
+    color: #3cc88f;
+    background-color: #ffffff;
+    border-color: #3cc88f;
 }
 
 .mobile-navbar .links a {
